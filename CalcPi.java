@@ -6,16 +6,16 @@ public class CalcPi {
 		Double divisor = 3.0;
 		boolean action = false;
 
-		for (int i = 0; i < n; i++){
+		for (int i = 0; i < n - 1; i++){
 			if (!action){
-				approx = approx - (1 / divisor);
+				approx = approx - (1.0 / divisor);
 				action = true;
 			}
 			else {
-				approx = approx + (1 / divisor);
+				approx = approx + (1.0 / divisor);
 				action = false;
 			}
-			divisor = divisor + 2;
+			divisor = divisor + 2.0;
 		}
 
 		System.out.println("pi according to Java: " + Math.PI);
